@@ -8,14 +8,6 @@
     <WarningsNotAsErrors>AD0001</WarningsNotAsErrors>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <Product>CodeCracker</Product>
-    <Copyright>Copyright © 2014-2018</Copyright>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <Version>1.0.0.0</Version>
-    <FileVersion>1.1.0.0</FileVersion>
-  </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>

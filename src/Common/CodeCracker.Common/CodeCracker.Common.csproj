@@ -36,4 +36,23 @@
     <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="1.3.2" />
   </ItemGroup>
 
+  <!--
+    The following item groups should not be necessary, but they will be recreated every time the RESX file is changed
+    due to a bug in the project system.
+  -->
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
